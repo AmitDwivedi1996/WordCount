@@ -1,0 +1,13 @@
+<a href = "{% url 'home' %}">Back</a><br>
+<button><a href = "{% url 'about' %}" target="_blank">click Me</a></button>
+<br>
+{{dataname}}
+<br />
+<h1>Number of Words</h1>
+{{fulltext}}
+<br />
+<br />
+{% for word,value in dict%}
+{{word}} = {{value}}
+<br>
+{% endfor%}
